@@ -5,8 +5,8 @@ import { addCustomer, deleteCustomer } from '../redux/customers/actions';
 const App = () => {
   const dispatch = useDispatch();
 
-  const cash = useSelector(state => state.cash.cash);
-  const customers = useSelector(state => state.customers.customers);
+  const cash = useSelector(state => state.cash);
+  const customers = useSelector(state => state.customers);
 
   const handleAddCash = () => {
     const addAmount = Number(prompt('Enter cash amount to add:'));
